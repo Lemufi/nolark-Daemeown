@@ -183,7 +183,7 @@
             </article>
         </section>
         <footer>
-            <p>&copy;2018 Nolark - Créé par <a href="mailto:jose.gil@ac-nice.fr">José GIL</a><p>
+            <p> <?php include('../includes/date.php') ?> &copy;<?php echo date("Y") ?> Nolark - Créé par <a href="mailto:jose.gil@ac-nice.fr">José GIL</a><p>
         </footer>
     </body>
 </html>
