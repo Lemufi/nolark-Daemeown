@@ -30,18 +30,15 @@
                     https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
             </picture>
             <nav>
-                <?php ?>
                 <input type="checkbox">
                 <span></span>
                 <span></span>
                 <span></span>
                 <ul>
-                    <li><a href="../index.php">Accueil</a></li>
-                    <li><a href="route.php">Route</a></li>
-                    <li><a href="cross.php">Cross</a></li>
-                    <li><a href="piste.php">Piste</a></li>
-                    <li><a href="enfants.php">Enfants</a></li>
-                    <li><a href="nous-contacter.php">Nous contacter</a></li>
+                    <?php
+                    require 'includes/lienspages.inc.php';
+                    linkOther();
+                    ?>
                 </ul>
             </nav>
         </header>

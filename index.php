@@ -34,7 +34,7 @@
                 <ul>
                     <?php
                     require 'includes/lienspages.inc.php';
-                    echo linkIndex();
+                    linkIndex();
                     ?>
                 </ul>
             </nav>
