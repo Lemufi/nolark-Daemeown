@@ -42,8 +42,16 @@ function stockcalc($stock){
     if($stock < 0){
         return 'Sur commande uniquement';
     }
+    else if($stock == 0){
+        return 'Indisponible';
+    }
     else if($stock <= 10){
-        echo 'plus que ', $stock, ' casques en stock...';
+        if($stock >1){
+            echo 'plus que ', $stock, ' casques en stock';
+        }
+        else{
+            echo "plus qu'un casque en stock";
+        }
     }
     else if($stock > 10){
         echo $stock, ' casques en stock';
@@ -55,7 +63,7 @@ function stockcalc($stock){
  * @param type $stock
  */
 function stockcolor($stock){
-    if($stock <0){
+    if($stock <=0){
         echo 'stockko';
     }
     else {
