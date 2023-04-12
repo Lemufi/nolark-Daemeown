@@ -34,7 +34,7 @@
                 <span></span>
                 <ul>
                     <?php
-                    require 'includes/lienspages.inc.php';
+                    require '../includes/lienspages.inc.php';
                     linkOther();
                     ?>
                 </ul>

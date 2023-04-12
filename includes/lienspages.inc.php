@@ -14,10 +14,10 @@ function linkIndex() {
 }
 
 function linkOther() {
-    $pages = array("index.php", "route.php", "cross.php", "piste.php", "enfants.php", "nous-contacter.php");
+    $pages = array("../index.php", "route.php", "cross.php", "piste.php", "enfants.php", "nous-contacter.php");
     $noms = array("Acceuil", "Route", "Cross", "Piste", "Enfants", "Nous contacter");
     $nbLiens = count($pages);
     for ($i = 0; $i < $nbLiens; $i++) {
-        echo '<li><a href="pages/', $pages[$i], '">', $noms[$i], '</a></li>';
+        echo '<li><a href="', $pages[$i], '">', $noms[$i], '</a></li>';
     }
 }
